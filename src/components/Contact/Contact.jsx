@@ -52,7 +52,7 @@ export default function Contact({ data, backgroundColorPrimary, textColor, fontC
             });
         }
     };
-    return (
+    return (<>{data&&
         <form onSubmit={handleSubmit} method="POST" style={{ width: '100vw', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', backgroundColor: backgroundColorPrimary, padding: ' 10vh 10vw', }}>
             {/* {countries.map((e, i) => <div key={i}><p>{e.name}</p><img src={e.flag} alt={e.name} /></div>)} */}
             <ThemeProvider theme={theming}>
@@ -112,6 +112,6 @@ export default function Contact({ data, backgroundColorPrimary, textColor, fontC
                     <Button sx={{ my: 3, width: '100%' }} type="submit" variant="contained" endIcon={<SendIcon />}>{data.contact.button}</Button>
                 </div>
             </ThemeProvider>
-        </form>
+        </form>}</>
     )
 }

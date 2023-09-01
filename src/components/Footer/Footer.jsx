@@ -21,7 +21,7 @@ export default function Footer(props) {
             }
         },
     });
-    return (
+    return (<>{data&&
         <footer style={{ display: 'flex', flexDirection: 'column', width: '100vw', padding: '160px 0px 30px 0px', alignItems: 'center' }}>
                 <ThemeProvider theme={theming}>
                     <a rel="noreferrer" href={props.data.cv.url} style={{textDecoration:'none'}} download="CamilaZupanovich"><Button variant="contained" size="small" startIcon={<DownloadIcon />} sx={{ mt: 2, mb: 3 }}>{props.data.cv.title}</Button></a>
@@ -62,6 +62,6 @@ export default function Footer(props) {
             </div>
             <Divider style={{ width: '100%' }} />
             <p style={{ color: props.textColor, paddingLeft: '15vw', paddingRight: '15vw', textAlign: 'center' }}>{props.data.footer.policy}</p>
-        </footer>
+        </footer>}</>
     )
 }
