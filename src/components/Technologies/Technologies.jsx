@@ -10,7 +10,7 @@ export default function Technologies({ data, backgroundColorSecondary, backgroun
         <>
             <div className="containerTech">
                 <div className="data1">
-                    <Typography variant="overline" display="block" sx={{ color: textColor }} >{data.about.phrase[0]}</Typography>
+                    {data&&<Typography variant="overline" display="block" sx={{ color: textColor }} >{data.about.phrase[0]}</Typography>}
                     <div className="container-tech">
                         {data && data.technologies.map((e, i) =>
                             <div key={i} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
