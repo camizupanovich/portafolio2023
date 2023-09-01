@@ -1,0 +1,48 @@
+.imgContainer {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    /* Para mantener el contenido dentro del contenedor */
+    cursor: pointer;
+    min-width: 210px;
+    max-width: 410px;
+}
+
+.imgP {
+    filter: saturate(0%);
+    width: 100%;
+    height: auto;
+    transition: filter 1s, transform 1s;
+}
+
+.imgContainer:hover .imgP {
+    filter: saturate(150%);
+    transform: scale(1.1);
+}
+
+.infoContainer {
+    position: absolute;
+    backdrop-filter: blur(10px);
+    height: 110px;
+    width: 220px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.imgContainer:hover .infoContainer {
+    opacity: 1;
+}
+
+.socialContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

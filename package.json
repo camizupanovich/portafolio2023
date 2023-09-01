@@ -1,0 +1,42 @@
+{
+  "name": "camila-zupanovich",
+  "version": "1.0.0",
+  "description": "Camila Zupanovich's website and personal portfolio @2023. Developer specialized in user interface.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "author": "Camila Zupanovich",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/style": "^0.8.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.7",
+    "@mui/joy": "^5.0.0-beta.4",
+    "@mui/material": "^5.14.7",
+    "axios": "^1.5.0",
+    "nodemon": "^3.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.10.1",
+    "react-scripts": "^5.0.1",
+    "react-share": "^4.4.1",
+    "sweetalert2": "^11.7.27"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+.bg-img-hero {
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url("../../assets/images/wall/hero-desktop.png");
+    background-attachment: fixed;
+    background-position: 'center';
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .bg-img-hero {
+        background-image: url("../../assets/images/wall/hero-mobile.png");
+    }
+}

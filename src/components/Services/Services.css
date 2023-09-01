@@ -1,0 +1,95 @@
+.screen {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    transition: 1s;
+    padding: 10px 10px 35px 10px;
+    border-radius: 10px;
+}
+
+.perspective {
+    transform: perspective(40cm) rotateX(60deg);
+    box-shadow: -1px 10px 0px 0px rgba(0, 0, 0, 0.5), -1px 17px 7px -2px rgba(0, 0, 0, 0.63);
+    -webkit-box-shadow: -1px 17px 7px -2px rgba(0, 0, 0, 0.63), -1px 10px 0px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -1px 17px 7px -2px rgba(0, 0, 0, 0.63), -1px 10px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(28, 28, 28);
+    transition: 1s;
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-rows: 30% 30% 30%;
+    grid-template-columns: 30% 30% 30%;
+    row-gap: 5px;
+    column-gap: 5px;
+}
+
+
+.tooltip {
+    width: auto;
+    text-align: center;
+    font-weight: 900;
+    max-width:80vw;
+}
+
+.tooltipTitle {
+    font-size: 74px;
+}
+
+@media (max-width: 768px) {
+    .tooltipTitle {
+        font-size: 36px;
+    }
+}
+
+
+.grid {
+    border: none;
+    transition: 2s;
+    border-radius: 3px;
+}
+
+.screenOn {
+    background-color: rgb(28, 28, 28);
+    cursor: pointer;
+}
+
+.screenOn:hover {
+    background-color: #b2e2f2;
+    box-shadow: 0px 0px 8px white;
+}
+
+.screenOn:before {
+    background-color: #b2e2f2;
+}
+.screenOn:focus {
+    background-color: #b2e2f2;
+}
+
+.button {
+    position: absolute;
+    bottom: 5px;
+    left: 144px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: black;
+    border: 2px solid rgb(19, 19, 19);
+    cursor: pointer;
+}
+
+.button:hover {
+    border: 1px solid rgb(96, 96, 96);
+    box-shadow: 0px 0px 2px white;
+}
+
+.button:active {
+    border: 1px solid rgb(96, 96, 96);
+    box-shadow: 0px 0px 1px white;
+}
