@@ -16,8 +16,8 @@ import Footer from './components/Footer/Footer';
 
 function App() {
   /* Language set data */
-  const lang = navigator.language || navigator.userLanguage || null;
-  const data = lang === 'es-419' ? esp : en;
+  //const lang = navigator.language || navigator.userLanguage || null;
+  const data = esp
   /* Theme mode and color configuration vars */
   let [theme, setTheme] = useState('dark');
   const backgroundColorSecondary = theme === 'dark' ? colors.bgSecondary.dark : colors.bgSecondary.light;
