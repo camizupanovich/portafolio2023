@@ -448,7 +448,7 @@ export const en = {
         title: 'Feel free to reach out to me to explore how I can contribute to your team or project!',
         button: 'Send',
         alert: {
-            success: {
+            succes: {
                 title: 'Thank you for your message!',
                 subtitle: 'I will be contacting you via the provided email to address your inquiry.',
             },
