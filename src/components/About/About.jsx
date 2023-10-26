@@ -22,7 +22,7 @@ export default function About({ data, backgroundColorSecondary, backgroundColorP
                         <blockquote>{e.content}
                             <div className="arrow"></div>
                         </blockquote>
-                        <img src={e.avatar} alt="sq-sample3" />
+                        <img src="https://alh-webservice.de/bstbilder/3461_1672833327.jpg" alt={e.author} />
                         <div className="author">
                             <h5>{e.author}<span>{e.description}</span></h5>
                         </div>
